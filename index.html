@@ -9,7 +9,7 @@
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
     />
-
+    <script src="https://kit.fontawesome.com/30f18aba31.js" crossorigin="anonymous"></script>
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
@@ -18,9 +18,165 @@
 
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <style>
+      /* Make the image fully responsive */
+      .carousel-inner img {
+        width: 100%;
+        height: 450px;
+      }
+      .bg-cover {
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+      .carousel-bg-area {
+        background-color: rgba(255, 255, 255, 0.6);
+      }
+    </style>
   </head>
   <body>
-    
-    
+    <div class="head-link">
+      <a href="" class="fab fa-facebook-square"> </a>
+      <a href="" class="fab fa-instagram"></a>
+    </div>
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-sm bg-light">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a href="" class="nav-link">六角西餐廳</a>
+        </li>
+        <li class="nav-item">
+          <a href="" class="nav-link">首頁</a>
+        </li>
+        <div class="dropdown">
+          <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+            美味菜單
+          </button>
+          <div class="dropdown-menu">
+            <a href="" class="dropdown-item">青菜甲嘎飽</a>
+            <a href="" class="dropdown-item">肉類甲嘎撐</a>
+            <a href="" class="dropdown-item">特調台式醬料</a>
+          </div>
+        </div>
+      </ul>
+      <button class="btn btn-outline-primary mr-3">登入</button>
+      <button class="btn btn-primary mr-5">註冊</button>
+    </nav>
+    <!-- Navbar End-->
+
+    <!--Carousel for Foods-->
+    <div id="foodPage" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ul class="carousel-indicators">
+        <li data-target="#foodPage" data-slide-to="0" class="active"></li>
+        <li data-target="#foodPage" data-slide-to="1"></li>
+        <li data-target="#foodPage" data-slide-to="2"></li>
+      </ul>
+
+      <!--Images-->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            class="d-block w-100"
+            src="https://images.unsplash.com/photo-1590707404275-76670ec35b0a?ixlib=rb-1.2.1&
+            ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop="
+            alt=""
+          />
+          <div class="carousel-caption carousel-bg-area text-dark">
+            <h3>一個偷閒的時光</h3>
+            <p>We had such a great time in here</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            class="d-block w-100"
+            src="https://images.unsplash.com/photo-1589988618631-bd8c3542fd45?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&h=1000&q=80"
+            alt=""
+          />
+          <div class="carousel-caption carousel-bg-area text-dark">
+            <h3>我們挑選最新鮮的食材</h3>
+            <p>Fresh ingredient. You deserve best!</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            class="d-block w-100"
+            src="https://images.unsplash.com/photo-1560433956-b2847671bb86?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&h=1000&q=80"
+            alt=""
+          />
+          <div class="carousel-caption carousel-bg-area text-dark">
+            <h3>享受一切。</h3>
+            <p>Enjoing everything we provide!</p>
+          </div>
+        </div>
+      </div>
+      <!-- link icons -->
+      <a href="#foodPage" class="carousel-control-prev" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a href="#foodPage" class="carousel-control-next" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+    </div>
+
+    <!-- 資料 -->
+    <div class="d-flex justify-content-center p-3 text-white" style="background-color: #17a2b8;">
+      <div>
+        <i class="display-4 fas fa-utensils"></i>
+        <h4>忘卻不了的記憶</h4>
+        <p>吃是為了走更長遠的道路，從中汲取前進的動能，大步向前。</p>
+      </div>
+
+      <div class="mx-5">
+        <i class="display-4 fas fa-ice-cream"></i>
+        <h4>忘卻不了的記憶</h4>
+        <p>吃是為了走更長遠的道路，從中汲取前進的動能，大步向前。</p>
+      </div>
+
+      <div>
+        <i class="display-4 fas fa-birthday-cake"></i>
+        <h4>忘卻不了的記憶</h4>
+        <p>吃是為了走更長遠的道路，從中汲取前進的動能，大步向前。</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div
+        class="col-md-6"
+        style="
+          background-image: url(https://images.unsplash.com/photo-1470858831619-ca02d796b2a5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=8);
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+        "
+      >
+        <!-- <img class="d-block w100 h100" src="https://images.unsplash.com/photo-1470858831619-ca02d796b2a5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9
+        &auto=format&fit=crop&w=1350&q=80" alt="" > -->
+      </div>
+      <div class="col-md-6">
+        <div class="row">
+          <div class="col-md-12">
+            <h4>歡迎來到特色餐廳</h4>
+            <p>
+              遇到這些灰色道德地帶時，要到兩三年後才會比較有清楚的感受，而這正是為什麼西方公司會存活，作為一個年輕人，
+              但是負責的人需要接受風險、喜歡冒險和願意負責。2，流感病毒攻心，春電展將開展，NBA明星周，低價電信資費戰，曼城主場連勝。
+            </p>
+            <div class="btn btn-outline-primary">瞭解更多</div>
+          </div>
+          <div class="col-md-6">
+            <h4>含羞草似的嬌柔</h4>
+            <p>
+              臺時記者於採訪時先問萊福力，該去哪裡捕獲野生萊福力獲得合照機會。萊福力透露：「我每天都會去同個地方吃早餐
+            </p>
+          </div>
+          <div class="col-md-6">
+            <h4>棒球大聯盟</h4>
+            <p>
+              萊福力接著補充：「然後我不會去酒吧，我通常只是出去吃吃飯。喔對了！我還會去吃藏壽司。我超愛壽司，星期一是我的壽司日！
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
